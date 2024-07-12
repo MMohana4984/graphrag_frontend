@@ -19,8 +19,22 @@ To get started with GraphRag Frontend, you need to have Python installed on your
     git clone https://github.com/MMohana4984/graphrag_frontend.git
     cd graphrag_frontend
     ```
+2. **Create a virtual environment using Python 3.11:**
+    ```sh
+    python3.11 -m venv venv
+    ```
 
-2. **Install the required dependencies:**
+3. **Activate the virtual environment:**
+    - On **Windows**:
+        ```sh
+        venv\Scripts\activate
+        ```
+    - On **macOS and Linux**:
+        ```sh
+        source venv/bin/activate
+        ```
+        
+4. **Install the required dependencies:**
     ```sh
     pip install -r requirements.txt
     ```
