@@ -4,10 +4,11 @@ GraphRag Frontend is a Streamlit-based application designed to provide a user-fr
 
 ## Table of Contents
 - [Installation](#installation)
+- [Preprocessing](#preprocessing)
+- [Adding PDF Documents](#adding-pdf-documents)
 - [Initialization](#initialization)
 - [Indexing](#indexing)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Installation
