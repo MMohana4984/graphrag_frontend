@@ -1,0 +1,306 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="level" attr.type="long" />
+  <key id="d12" for="edge" attr.name="human_readable_id" attr.type="long" />
+  <key id="d11" for="edge" attr.name="id" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="description" attr.type="string" />
+  <key id="d8" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d7" for="node" attr.name="id" attr.type="string" />
+  <key id="d6" for="node" attr.name="human_readable_id" attr.type="long" />
+  <key id="d5" for="node" attr.name="degree" attr.type="long" />
+  <key id="d4" for="node" attr.name="level" attr.type="long" />
+  <key id="d3" for="node" attr.name="cluster" attr.type="string" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;AM-OC&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"AM-OC is an abbreviation for Comptroller of the Currency, responsible for administering national banks and asset management operations and controls."</data>
+      <data key="d2">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">3</data>
+      <data key="d6">0</data>
+      <data key="d7">b45241d70f0e43fca764df95b2b81f77</data>
+    </node>
+    <node id="&quot;COMPTROLLER OF THE CURRENCY&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Comptroller of the Currency is an official overseeing national banks and asset management operations and controls."</data>
+      <data key="d2">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">1</data>
+      <data key="d7">4119fd06010c494caa07f439b333f4c5</data>
+    </node>
+    <node id="&quot;ASSET MANAGEMENT&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Asset Management involves overseeing and controlling assets to mitigate risks and ensure compliance with regulations."</data>
+      <data key="d2">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d5">1</data>
+      <data key="d6">2</data>
+      <data key="d7">d3835bf3dda84ead99deadbeac5d0d7d</data>
+    </node>
+    <node id="&quot;NATIONAL BANKS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"National Banks are financial institutions regulated by the Comptroller of the Currency for asset management operations and controls."</data>
+      <data key="d2">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">3</data>
+      <data key="d7">077d2820ae1845bcbb1803379a3d1eae</data>
+    </node>
+    <node id="&quot;FEDERAL SAVINGS ASSOCIATIONS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Federal Savings Associations are financial institutions subject to asset management guidelines issued by the Comptroller of the Currency."</data>
+      <data key="d2">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">4</data>
+      <data key="d7">3671ea0dd4e84c1a9b02c5ab2c8f4bac</data>
+    </node>
+    <node id="&quot;OPERATIONS AND CONTROLS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Operations and Controls refer to the processes and procedures involved in managing assets and mitigating associated risks."</data>
+      <data key="d2">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d5">1</data>
+      <data key="d6">5</data>
+      <data key="d7">19a7f254a5d64566ab5cc15472df02de</data>
+    </node>
+    <node id="&quot;COMPTROLLER&#8217;S HANDBOOK&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"The Comptroller&#8217;s Handbook provides guidance on asset management operations and controls for financial institutions."</data>
+      <data key="d2">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d5">0</data>
+      <data key="d6">6</data>
+      <data key="d7">e7ffaee9d31d4d3c96e04f911d0a8f9e</data>
+    </node>
+    <node id="&quot;BANK ASSETS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Bank Assets refers to the financial assets held by a bank."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">7</data>
+      <data key="d7">f7e11b0e297a44a896dc67928368f600</data>
+    </node>
+    <node id="&quot;SEGREGATION OF DUTIES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Segregation of Duties refers to the practice of dividing responsibilities among different individuals to prevent fraud or errors."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">8</data>
+      <data key="d7">1fd3fa8bb5a2408790042ab9573779ee</data>
+    </node>
+    <node id="&quot;JOINT CUSTODY OR CONTROL&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Joint Custody or Control refers to the shared responsibility or authority over assets or processes."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">0</data>
+      <data key="d6">9</data>
+      <data key="d7">27f9fbe6ad8c4a8b9acee0d3596ed57c</data>
+    </node>
+    <node id="&quot;SYSTEM ADMINISTRATION&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"System Administration involves managing and maintaining computer systems and networks within an organization."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">10</data>
+      <data key="d7">e1fd0e904a53409aada44442f23a51cb</data>
+    </node>
+    <node id="&quot;INTERNAL ACCOUNTING CONTROLS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Internal Accounting Controls are procedures and policies implemented to ensure accurate financial reporting and prevent fraud."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">11</data>
+      <data key="d7">de988724cfdf45cebfba3b13c43ceede</data>
+    </node>
+    <node id="&quot;OPERATIONS CORE FUNCTIONS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Operations Core Functions are the essential activities that an organization performs to achieve its objectives."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">2</data>
+      <data key="d6">12</data>
+      <data key="d7">96aad7cb4b7d40e9b7e13b94a67af206</data>
+    </node>
+    <node id="&quot;SAFEGUARDING OF ASSETS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Safeguarding of Assets involves protecting an organization's assets from theft, loss, or misuse."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">13</data>
+      <data key="d7">c9632a35146940c2a86167c7726d35e9</data>
+    </node>
+    <node id="&quot;SECURITIES SERVICING&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Securities Servicing refers to the activities involved in managing and maintaining securities for clients."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">14</data>
+      <data key="d7">9646481f66ce4fd2b08c2eddda42fc82</data>
+    </node>
+    <node id="&quot;SECURITIES TRANSACTION PROCESSING&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Securities Transaction Processing involves the execution and settlement of transactions related to securities."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">15</data>
+      <data key="d7">d91a266f766b4737a06b0fda588ba40b</data>
+    </node>
+    <node id="&quot;CASH TRANSACTION PROCESSING&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Cash Transaction Processing involves the handling and recording of cash transactions within an organization."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">16</data>
+      <data key="d7">bc0e3f075a4c4ebbb7c7b152b65a5625</data>
+    </node>
+    <node id="&quot;ASSET MANAGEMENT ACCOUNTING AND INTERNAL ACCOUNTING CONTROLS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Asset Management Accounting and Internal Accounting Controls pertain to the financial management and control measures related to assets."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">17</data>
+      <data key="d7">254770028d7a4fa9877da4ba0ad5ad21</data>
+    </node>
+    <node id="&quot;RECORD KEEPING AND REPORTING&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Record Keeping and Reporting involve the documentation and communication of financial information within an organization."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">18</data>
+      <data key="d7">4a67211867e5464ba45126315a122a8a</data>
+    </node>
+    <node id="&quot;OTHER PROCESSES, CONTROLS, OR REGULATORY REQUIREMENTS&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Other Processes, Controls, or Regulatory Requirements encompass additional activities and guidelines that organizations must adhere to."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">19</data>
+      <data key="d7">04dbbb2283b845baaeac0eaf0c34c9da</data>
+    </node>
+    <node id="&quot;OPERATIONS AND CONTROLS: EXAMINATION PROCEDURES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Operations and Controls: Examination Procedures refer to the methods and protocols used to assess and evaluate an organization's operations and controls."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">20</data>
+      <data key="d7">1943f245ee4243bdbfbd2fd619ae824a</data>
+    </node>
+    <node id="&quot;PLANNING ACTIVITIES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Planning Activities involve the strategic and operational planning processes within an organization."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">21</data>
+      <data key="d7">273daeec8cad41e6b3e450447db58ee7</data>
+    </node>
+    <node id="&quot;OPERATIONS AND CONTROLS: QUANTITY OF RISK&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Operations and Controls: Quantity of Risk relates to the level of risk associated with an organization's operations and controls."</data>
+      <data key="d2">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d5">1</data>
+      <data key="d6">22</data>
+      <data key="d7">e69dc259edb944ea9ea41264b9fcfe59</data>
+    </node>
+    <edge source="&quot;AM-OC&quot;" target="&quot;COMPTROLLER OF THE CURRENCY&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"AM-OC is associated with the Comptroller of the Currency in overseeing asset management operations and controls."</data>
+      <data key="d10">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d11">e2f5735c7d714423a2c4f61ca2644626</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;AM-OC&quot;" target="&quot;NATIONAL BANKS&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"AM-OC provides guidance to National Banks on asset management operations and controls."</data>
+      <data key="d10">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d11">deece7e64b2a4628850d4bb6e394a9c3</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;AM-OC&quot;" target="&quot;FEDERAL SAVINGS ASSOCIATIONS&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"AM-OC extends its guidance to Federal Savings Associations for asset management operations and controls."</data>
+      <data key="d10">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d11">e657b5121ff8456b9a610cfaead8e0cb</data>
+      <data key="d12">2</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;ASSET MANAGEMENT&quot;" target="&quot;OPERATIONS AND CONTROLS&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Operations and Controls are essential components of Asset Management for mitigating risks and ensuring compliance."</data>
+      <data key="d10">a42020f92b5bf1404cc6a51b96d63bb3</data>
+      <data key="d11">bf4e255cdac94ccc83a56435a5e4b075</data>
+      <data key="d12">3</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;BANK ASSETS&quot;" target="&quot;SEGREGATION OF DUTIES&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Segregation of Duties is essential for safeguarding Bank Assets and preventing fraud or errors."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">3b040bcc19f14e04880ae52881a89c1c</data>
+      <data key="d12">4</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;SYSTEM ADMINISTRATION&quot;" target="&quot;INTERNAL ACCOUNTING CONTROLS&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"System Administration plays a role in implementing Internal Accounting Controls to ensure accurate financial reporting."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">3d6b216c14354332b1bf1927ba168986</data>
+      <data key="d12">5</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;OPERATIONS CORE FUNCTIONS&quot;" target="&quot;SAFEGUARDING OF ASSETS&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Safeguarding of Assets is a critical aspect of Operations Core Functions to protect the organization's resources."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">1c109cfdc370463eb6d537e5b7b382fb</data>
+      <data key="d12">6</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;OPERATIONS CORE FUNCTIONS&quot;" target="&quot;OPERATIONS AND CONTROLS: QUANTITY OF RISK&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Operations and Controls: Quantity of Risk is a measure of risk associated with Operations Core Functions."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">3d0dcbc8971b415ea18065edc4d8c8ef</data>
+      <data key="d12">7</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;SECURITIES SERVICING&quot;" target="&quot;SECURITIES TRANSACTION PROCESSING&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Securities Servicing is directly related to Securities Transaction Processing in managing client securities."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">68105770b523412388424d984e711917</data>
+      <data key="d12">8</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;CASH TRANSACTION PROCESSING&quot;" target="&quot;ASSET MANAGEMENT ACCOUNTING AND INTERNAL ACCOUNTING CONTROLS&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Cash Transaction Processing is part of Asset Management Accounting and Internal Accounting Controls to manage financial transactions."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">85c79fd84f5e4f918471c386852204c5</data>
+      <data key="d12">9</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;RECORD KEEPING AND REPORTING&quot;" target="&quot;OTHER PROCESSES, CONTROLS, OR REGULATORY REQUIREMENTS&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Record Keeping and Reporting are integral to complying with Other Processes, Controls, or Regulatory Requirements."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">eae4259b19a741ab9f9f6af18c4a0470</data>
+      <data key="d12">10</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="&quot;OPERATIONS AND CONTROLS: EXAMINATION PROCEDURES&quot;" target="&quot;PLANNING ACTIVITIES&quot;">
+      <data key="d8">1.0</data>
+      <data key="d9">"Operations and Controls: Examination Procedures are part of the Planning Activities to assess and evaluate organizational processes."</data>
+      <data key="d10">c09b0f6ff7e58b3f8b694b198e08d554</data>
+      <data key="d11">3138f39f2bcd43a69e0697cd3b05bc4d</data>
+      <data key="d12">11</data>
+      <data key="d13">0</data>
+    </edge>
+  </graph>
+</graphml>
