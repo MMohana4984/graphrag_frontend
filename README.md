@@ -25,11 +25,11 @@ To get started with GraphRag Frontend, you need to have Python installed on your
     ```
 
 3. **Activate the virtual environment:**
-    - On **Windows**:
+    - **Windows**:
         ```sh
         venv\Scripts\activate
         ```
-    - On **macOS and Linux**:
+    - **macOS and Linux**:
         ```sh
         source venv/bin/activate
         ```
