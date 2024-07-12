@@ -25,17 +25,6 @@ To get started with GraphRag Frontend, you need to have Python installed on your
     pip install -r requirements.txt
     ```
 
-## Preprocessing
-
-Before indexing, you need to preprocess the PDF documents to convert them into text files.
-
-1. **Run the preprocessing script:**
-    ```sh
-    python preprocessing.py
-    ```
-
-    - This script will read the PDF files from the `pdfs` folder and create corresponding text files in the `input` folder.
-
 ## Adding PDF Documents
 
 To add your PDF documents for indexing, follow these steps:
@@ -55,6 +44,17 @@ GRAPHRAG_API_KEY=<API_KEY>
 ```
 
 Replace `<API_KEY>` with your actual GraphRag API key.
+
+## Preprocessing
+
+Before indexing, you need to preprocess the PDF documents to convert them into text files.
+
+1. **Run the preprocessing script:**
+    ```sh
+    python preprocessing.py
+    ```
+
+    - This script will read the PDF files from the `pdfs` folder and create corresponding text files in the `input` folder.
 
 ## Initialization
 
