@@ -82,21 +82,6 @@ streamlit run app.py
 
 Open your web browser and navigate to the local address provided by Streamlit to start using the Q&A interface.
 
-### Basic Query Example
-
-Within the Streamlit app, you can input your queries and receive answers based on the indexed graph data. The interface is designed to be intuitive and easy to use, providing real-time feedback and results.
-
-## Contributing
-
-We welcome contributions to GraphRag Frontend! If you'd like to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a Pull Request.
-
-Please ensure your code adheres to our coding standards and includes appropriate tests.
 
 ## License
 
