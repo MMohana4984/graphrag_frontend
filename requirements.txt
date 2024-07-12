@@ -115,7 +115,6 @@ python-dateutil
 python-dotenv
 python-magic
 pytz
-pywin32
 PyYAML
 pyzmq
 ratelimiter
