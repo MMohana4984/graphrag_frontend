@@ -48,6 +48,26 @@ Once the index is initialized, you can start indexing your graph data. The follo
 
     - `--root .`: This specifies the root directory where the graph data is located. The tool will recursively scan this directory for data to index.
 
+## Adding PDF Documents
+
+To add your PDF documents for indexing, follow these steps:
+
+1. **Place your PDF documents in the `pdfs` folder:**
+    - Ensure all PDF files you want to index are placed inside the `pdfs` directory within the project root.
+
+2. **Verify your `settings.yaml` configuration:**
+    - Ensure your `settings.yaml` file is properly configured with the necessary settings for indexing and querying.
+
+## Environment Setup
+
+Create a `.env` file in the project root with the following content:
+
+```env
+GRAPHRAG_API_KEY=<API_KEY>
+```
+
+Replace `<API_KEY>` with your actual GraphRag API key.
+
 ## Usage
 
 After initializing and indexing your data, you can use GraphRag Frontend to perform various Q&A operations on your indexed graph data. The specific usage commands and options depend on your exact needs and the functionality provided by the tool.
@@ -81,4 +101,3 @@ Please ensure your code adheres to our coding standards and includes appropriate
 ## License
 
 GraphRag Frontend is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
