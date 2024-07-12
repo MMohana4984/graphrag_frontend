@@ -16,7 +16,7 @@ To get started with GraphRag, you need to have Python installed on your system. 
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/graphrag.git
+    git clone https://github.com/MMohana4984/graphrag_frontend.git
     cd graphrag
     ```
 
