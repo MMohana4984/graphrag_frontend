@@ -1,63 +1,87 @@
-import fitz
 import os
 import subprocess
+import sys
+import warnings
+import yaml
 
-def pdf_to_text(pdf_path, txt_path):
-    # Open the PDF file
-    document = fitz.open(pdf_path)
-    text = ""
-    
-    # Iterate over each page
-    for page_num in range(len(document)):
-        page = document.load_page(page_num)
-        text += page.get_text()
-    
-    # Save the text to a file
-    with open(txt_path, "w", encoding="utf-8") as text_file:
-        text_file.write(text)
-
-def convert_pdfs_to_text(pdf_folder, txt_folder):
-    # Create the input folder if it doesn't exist
-    if not os.path.exists(txt_folder):
-        os.makedirs(txt_folder)
-    
-    # Iterate over each PDF in the folder
-    for pdf_file in os.listdir(pdf_folder):
-        if pdf_file.endswith(".pdf"):
-            pdf_path = os.path.join(pdf_folder, pdf_file)
-            txt_file = os.path.splitext(pdf_file)[0] + ".txt"
-            txt_path = os.path.join(txt_folder, txt_file)
-            pdf_to_text(pdf_path, txt_path)
-            print(f"Converted {pdf_file} to {txt_file}")
-
-def run_command(command):
+def run_command(command, error_message):
     try:
-        result = subprocess.run(command, check=True, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, env={"PYTHONIOENCODING": "utf-8"})
+        # Suppress warnings explicitly using the PYTHONWARNINGS environment variable
+        env = os.environ.copy()
+        env['PYTHONWARNINGS'] = 'ignore'
+        result = subprocess.run(command, check=True, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, env=env)
         print(result.stdout)
         if result.stderr:
-            print(f"Error: {result.stderr}")
+            print(f"Warning: {result.stderr}")
     except subprocess.CalledProcessError as e:
+        print(f"{error_message}")
         print(f"Command '{e.cmd}' returned non-zero exit status {e.returncode}.")
         print(e.output)
         print(e.stderr)
+        exit(1)
+
+def update_env_file(api_key):
+    env_file = '.env'
+    with open(env_file, 'w') as file:
+        file.write(f'GRAPHRAG_API_KEY={api_key}\n')
+    print(f"Updated {env_file} with the provided API key.")
+
+def update_settings_yaml():
+    settings_file = 'settings.yaml'
+    
+    with open(settings_file, 'r') as file:
+        settings = yaml.safe_load(file)
+    
+    if 'llm' in settings and 'model' in settings['llm']:
+        settings['llm']['model'] = 'gpt-4o'
+    
+    with open(settings_file, 'w') as file:
+        yaml.safe_dump(settings, file, default_flow_style=False)
+    
+    print(f"Updated model in {settings_file} to gpt-4o.")
 
 def main():
-    pdf_folder = "pdfs"
-    txt_folder = "input"
-    
-    # Convert all PDFs in the folder
-    convert_pdfs_to_text(pdf_folder, txt_folder)
-    
-    # Run the GraphRAG indexing commands
-    commands = [
-        "py -m graphrag.index --init --root .",
-        "py -m graphrag.index --root .",
-        "streamlit run app.py"
-    ]
-    
-    for command in commands:
-        print(f"Running: {command}")
-        run_command(command)
+    # Set PYTHONIOENCODING to utf-8
+    os.environ['PYTHONIOENCODING'] = 'utf-8'
+
+    # Preprocessing documents into text files
+    print("Running preprocessing.py")
+    run_command('py preprocessing.py', "Error during preprocessing")
+
+    # Initialize the GraphRAG index if not already initialized
+    if not os.path.exists('settings.yaml'):
+        print("Initializing the GraphRAG index")
+        run_command('py -m graphrag.index --init --root .', "Error initializing GraphRAG index")
+    else:
+        print("GraphRAG index already initialized")
+
+    # Prompt user for OpenAI API key
+    api_key = input("Please enter your OpenAI API key: ")
+
+    # Update the .env file with the OpenAI API key
+    update_env_file(api_key)
+
+    # Set the OpenAI API key environment variable
+    os.environ['GRAPHRAG_API_KEY'] = api_key
+
+    # Verify that the input directory contains text files
+    if not any(fname.endswith('.txt') for fname in os.listdir('input')):
+        print("No text files found in input directory")
+        exit(1)
+    else:
+        print("Text files found in input directory")
+
+    # Update the settings.yaml file to use gpt-4o model
+    update_settings_yaml()
+
+    # Run the GraphRAG index with the provided API key
+    print("Running the GraphRAG index")
+    run_command('py -m graphrag.index --root .', "Error running GraphRAG index")
+
+
+    # Start the Streamlit app
+    print("Starting the Streamlit app")
+    run_command('streamlit run app.py', "Error starting Streamlit app")
 
 if __name__ == "__main__":
     main()
