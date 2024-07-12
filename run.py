@@ -32,7 +32,7 @@ def convert_pdfs_to_text(pdf_folder, txt_folder):
 
 def run_command(command):
     try:
-        result = subprocess.run(command, check=True, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        result = subprocess.run(command, check=True, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, env={"PYTHONIOENCODING": "utf-8"})
         print(result.stdout)
         if result.stderr:
             print(f"Error: {result.stderr}")
