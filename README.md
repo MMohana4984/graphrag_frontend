@@ -1,6 +1,3 @@
-Sure, here is the updated README:
-
-```markdown
 # GraphRag Frontend
 
 GraphRag Frontend is a Streamlit-based application designed to provide a user-friendly Q&A interface for querying and interacting with graph-based data structures managed by the GraphRag package. This README provides detailed instructions on how to install and use the tool.
@@ -85,6 +82,3 @@ Please ensure your code adheres to our coding standards and includes appropriate
 
 GraphRag Frontend is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-```
-
-Feel free to customize further as per your specific project requirements.
