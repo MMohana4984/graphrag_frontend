@@ -25,6 +25,26 @@ To get started with GraphRag Frontend, you need to have Python installed on your
     pip install -r requirements.txt
     ```
 
+## Adding PDF Documents
+
+To add your PDF documents for indexing, follow these steps:
+
+1. **Place your PDF documents in the `pdfs` folder:**
+    - Ensure all PDF files you want to index are placed inside the `pdfs` directory within the project root.
+
+2. **Verify your `settings.yaml` configuration:**
+    - Ensure your `settings.yaml` file is properly configured with the necessary settings for indexing and querying.
+
+## Environment Setup
+
+Create a `.env` file in the project root with the following content:
+
+```env
+GRAPHRAG_API_KEY=<API_KEY>
+```
+
+Replace `<API_KEY>` with your actual GraphRag API key.
+
 ## Initialization
 
 Before you can start indexing your graph data, you need to initialize the GraphRag index using the backend package. This sets up the necessary directory structure and configuration files.
@@ -47,26 +67,6 @@ Once the index is initialized, you can start indexing your graph data. The follo
     ```
 
     - `--root .`: This specifies the root directory where the graph data is located. The tool will recursively scan this directory for data to index.
-
-## Adding PDF Documents
-
-To add your PDF documents for indexing, follow these steps:
-
-1. **Place your PDF documents in the `pdfs` folder:**
-    - Ensure all PDF files you want to index are placed inside the `pdfs` directory within the project root.
-
-2. **Verify your `settings.yaml` configuration:**
-    - Ensure your `settings.yaml` file is properly configured with the necessary settings for indexing and querying.
-
-## Environment Setup
-
-Create a `.env` file in the project root with the following content:
-
-```env
-GRAPHRAG_API_KEY=<API_KEY>
-```
-
-Replace `<API_KEY>` with your actual GraphRag API key.
 
 ## Usage
 
