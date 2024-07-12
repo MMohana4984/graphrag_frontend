@@ -1,13 +1,13 @@
+```markdown
 # GraphRag Frontend
 
 GraphRag Frontend is a Streamlit-based application designed to provide a user-friendly Q&A interface for querying and interacting with graph-based data structures managed by the GraphRag package. This README provides detailed instructions on how to install and use the tool.
 
 ## Table of Contents
 - [Installation](#installation)
-- [Preprocessing](#preprocessing)
 - [Adding PDF Documents](#adding-pdf-documents)
-- [Initialization](#initialization)
-- [Indexing](#indexing)
+- [Environment Setup](#environment-setup)
+- [Run](#run)
 - [Usage](#usage)
 - [License](#license)
 
@@ -33,9 +33,6 @@ To add your PDF documents for indexing, follow these steps:
 1. **Place your PDF documents in the `pdfs` folder:**
     - Ensure all PDF files you want to index are placed inside the `pdfs` directory within the project root.
 
-2. **Verify your `settings.yaml` configuration:**
-    - Ensure your `settings.yaml` file is properly configured with the necessary settings for indexing and querying.
-
 ## Environment Setup
 
 Create a `.env` file in the project root with the following content:
@@ -46,55 +43,28 @@ GRAPHRAG_API_KEY=<API_KEY>
 
 Replace `<API_KEY>` with your actual GraphRag API key.
 
-## Preprocessing
+## Run
 
-Before indexing, you need to preprocess the PDF documents to convert them into text files.
+To preprocess the PDF documents, convert them into text files, and run the Streamlit app, follow these steps:
 
-1. **Run the preprocessing script:**
+1. **Run the script:**
     ```sh
-    python preprocessing.py
+    python run.py
     ```
 
-    - This script will read the PDF files from the `pdfs` folder and create corresponding text files in the `input` folder.
-
-## Initialization
-
-Before you can start indexing your graph data, you need to initialize the GraphRag index using the backend package. This sets up the necessary directory structure and configuration files.
-
-1. **Initialize the index:**
-    ```sh
-    py -m graphrag.index --init --root .
-    ```
-
-    - `--init`: This flag indicates that you want to initialize the index.
-    - `--root .`: This specifies the root directory where the index will be initialized. In this case, the current directory.
-
-## Indexing
-
-Once the index is initialized, you can start indexing your graph data. The following command updates the index with the data in the specified root directory.
-
-1. **Index the graph data:**
-    ```sh
-    py -m graphrag.index --root .
-    ```
-
-    - `--root .`: This specifies the root directory where the graph data is located. The tool will recursively scan this directory for data to index.
+    - This script will read the PDF files from the `pdfs` folder, create corresponding text files in the `input` folder, and start the Streamlit app.
 
 ## Usage
 
-After initializing and indexing your data, you can use GraphRag Frontend to perform various Q&A operations on your indexed graph data. The specific usage commands and options depend on your exact needs and the functionality provided by the tool.
+After running the `run.py` script, you can use GraphRag Frontend to perform various Q&A operations on your indexed graph data. The specific usage commands and options depend on your exact needs and the functionality provided by the tool.
 
 ### Running the Streamlit App
 
-To start the Streamlit app and interact with your graph data via a web interface, use the following command:
-
-```sh
-streamlit run app.py
-```
-
-Open your web browser and navigate to the local address provided by Streamlit to start using the Q&A interface.
-
+To start the Streamlit app and interact with your graph data via a web interface, navigate to the local address provided by Streamlit after running the `run.py` script. The interface is designed to be intuitive and easy to use, providing real-time feedback and results.
 
 ## License
 
 GraphRag Frontend is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+```
+
+This updated README now includes instructions to simply run the `run.py` script, which handles preprocessing the PDF documents and starting the Streamlit app.
