@@ -1,4 +1,3 @@
-```markdown
 # GraphRag Frontend
 
 GraphRag Frontend is a Streamlit-based application designed to provide a user-friendly Q&A interface for querying and interacting with graph-based data structures managed by the GraphRag package. This README provides detailed instructions on how to install and use the tool.
@@ -65,6 +64,3 @@ To start the Streamlit app and interact with your graph data via a web interface
 ## License
 
 GraphRag Frontend is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-```
-
-This updated README now includes instructions to simply run the `run.py` script, which handles preprocessing the PDF documents and starting the Streamlit app.
