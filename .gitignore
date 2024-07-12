@@ -55,6 +55,7 @@ lancedb/
 output/
 prompts/
 settings.yaml
+
 # Translations
 *.mo
 *.pot
