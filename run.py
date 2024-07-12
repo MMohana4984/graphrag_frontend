@@ -51,7 +51,8 @@ def main():
     # Run the GraphRAG indexing commands
     commands = [
         "py -m graphrag.index --init --root .",
-        "py -m graphrag.index --root ."
+        "py -m graphrag.index --root .",
+        "streamlit run app.py"
     ]
     
     for command in commands:
